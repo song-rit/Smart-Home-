@@ -2,7 +2,7 @@
 
 Control Light, Fan, Gate in home 
 
-Sensor detect smoke, motion, windowns, door 
+Sensor detect smoke, motion, windows, door 
  
 Server = Arduino Mega + Ethernet sheild 
 
