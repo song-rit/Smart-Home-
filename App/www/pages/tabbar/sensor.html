@@ -1,0 +1,104 @@
+<ons-navigator title="Navigator" var="myNavigator">
+    <ons-page ng-controller="sensor">
+      <ons-toolbar>
+        <div class="center">Gate/Sensor</div>
+      </ons-toolbar>
+      <ons-scroller>
+
+      <div class="settings-header">Gate</div>
+          <ons-list modifier="inset" class="settings-list">
+              <ons-list-item class="item">
+                 <ons-row >
+                    <ons-col  >
+                        <img ng-src={{fence.pic}} class="to-image2">
+                    </ons-col>
+                  </ons-row>
+                  <ons-row>
+                    <ons-col>                       
+                            <div class="button-bar" 
+                                  style="width:165px; 
+                                         margin-top: 15px;
+                                         margin-right: 5px;
+                                         
+                                         float:right;
+                                         ">
+                              <div class="button-bar__item">
+                                <button class="button-bar__button" ng-click="moTorHTTP('OPEN')">Open</button>
+                              </div>
+
+                              <div class="button-bar__item">
+                                <button class="button-bar__button" ng-click="moTorHTTP('CLOSE')">Close</button>
+                              </div>
+                            </div>
+                    </ons-col >                    
+                </ons-row>                  
+              </ons-list-item>              
+          </ons-list>        
+
+         <div class="settings-header">Sensor</div>
+          <ons-list modifier="inset" class="settings-list">
+              <ons-list-item class="item" ng-repeat="i in sensor" >
+                 <ons-row >
+                    <ons-col width="75px" >
+                        <img ng-src={{i.pic}} class="to-image" ng-click="doSomething()">
+                    </ons-col>
+                    <ons-col class="item-name">                       
+                            <div>{{i.name}}</div>
+                    </ons-col >
+                    <ons-col align="right" class="item-switch" width="50px" >
+                        <div color="red"><i><span class="highlight">{{i.status}}</span></i></div>
+                    </ons-col>
+                </ons-row>                  
+              </ons-list-item>              
+          </ons-list>
+
+          
+      </ons-scroller>
+    </ons-page>
+  </ons-navigator>
+
+
+<style type="text/css">
+    
+    .pic{
+        margin: auto; border: 1px;
+    }
+
+    .item-name{
+
+       margin-left: 0px;
+       margin-top: 15px;    
+       font-weight: 500;
+       font-size: 16px;  
+                 
+      
+    }
+
+    .item-switch{
+
+       margin-top: 15px;
+       margin-right: 10px;
+    }
+
+    .to-image {
+      width:60px;
+      height: 50px;
+      padding: 0px;
+      border-radius: 4px;
+      -webkit-border-radius: 4px;     
+    }
+
+    .to-image2 {
+      width:95%;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 8px;
+      border-radius: 4px;
+      -webkit-border-radius: 4px;     
+    }
+
+    span.highlight {
+    background-color: #FFFF66;
+    }
+
+</style>
