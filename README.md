@@ -14,4 +14,4 @@ App = Web + Cordova
 
 Tools: Android Studio, Cordova, Ripple-emulator
 
-![Alt text](pic/1.jpg?raw=true "Optional Title")
+![Alt text](pic/1.jpg?raw=true)
