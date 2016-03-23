@@ -14,4 +14,5 @@ App = Web + Cordova
 
 Tools: Android Studio, Cordova, Ripple-emulator
 
-![Alt text](song-rit/smart-home/blob/master/pic/1.JPG?raw=true)
+![alt tag](https://github.com/song-rit/smart-home/blob/master/pic/1.JPG)
+
