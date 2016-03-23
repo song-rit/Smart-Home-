@@ -1,6 +1,6 @@
 app.controller('login', function ($scope, $http, $q, $interval, DataBase, Data) { 
 
-	var user
+  var user
   var ip
   $scope.light
 
