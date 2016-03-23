@@ -1,9 +1,9 @@
 # smart-home
 
-Control Light, Fan, Gate in home 
-Sensor detect smoke, motion, windows, door.
+Control Light, Fan, Gate in home \n
+Sensor detect smoke, motion, windows, door \n
  
-Server = Arduino Mega + Ethernet sheild
+Server = Arduino Mega + Ethernet sheild \n
 
 Hybrid Application(Cordova)
 Web = OnsenUI + AngularJS
